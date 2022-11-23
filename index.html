@@ -7,79 +7,65 @@
     <title>Our website scrubs</title>
   </head>
   <body>
-    
     <script src="index.js"></script>
     <div>
       <h1>Converter</h1>
 
-      <h4>Weight</h4>
+      <h2>Weight</h2>
       <div>
+        <p>from kilogram to pounds</p>
         <input
           type="number"
           id="kgsInput"
           oninput="kgsToLbs(this.value)"
           placeholder="Enter Kilograms..."
         />
+        <h4>Pounds:</h4>
+        <div id="lbsOutput"></div>
       </div>
 
-      <div>
-        <div>
-          <h4>Pounds:</h4>
-          <div id="lbsOutput"></div>
-        </div>
-      </div>
+      <br />
 
-      <h4>Measurement</h4>
+      <h2>Measurement</h2>
       <div>
+        <p>from feet to cm</p>
         <input
           type="number"
           id="feetInput"
           oninput="feetToCms(this.value)"
           placeholder="Enter Feet..."
         />
+        <h4>Centimeters:</h4>
+        <div id="cmsOutput"></div>
       </div>
 
-      <div>
-        <div>
-          <h4>Centimeters:</h4>
-          <div id="cmsOutput"></div>
-        </div>
-      </div>
       <br />
 
-      <h4>Temperature</h4>
+      <h2>Temperature</h2>
       <div>
+        <p>from celcius to fahrenheit</p>
         <input
           type="number"
           id="celciusInput"
           oninput="celsiusToFahrenheit(this.value)"
           placeholder="Enter Celcius..."
         />
+        <h4>Fahrenheit:</h4>
+        <div id="fhtOutput"></div>
       </div>
 
-      <div>
-        <div>
-          <h4>Fahrenheit:</h4>
-          <div id="fhtOutput"></div>
-        </div>
-      </div>
       <br />
-
-      <h4>Measurement</h4>
+      
       <div>
+        <p>from fahrenheit to celicus</p>
         <input
           type="number"
           id="fahrenheitInput"
           oninput="fahrenheitToCelsius(this.value)"
           placeholder="Enter Fahrenheit..."
         />
-      </div>
-
-      <div>
-        <div>
-          <h4>Celsius:</h4>
-          <div id="celsOutput"></div>
-        </div>
+        <h4>Celsius:</h4>
+        <div id="celsOutput"></div>
       </div>
     </div>
     <script src="testconverter.js"></script>
