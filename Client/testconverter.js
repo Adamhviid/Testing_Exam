@@ -34,5 +34,14 @@ function celsiusToFahrenheit(myNumberInCelcius) {
     return myNumberInFahrenheit
 }
 
+function milliliterToOunce(myNumberInMillitmeter) {
+    const myNumberInOunce = Math.round(myNumberInMillitmeter / 29.57)
+    document.getElementById("ozOutput").innerHTML = myNumberInOunce
+    return myNumberInOunce
+}
 
-
+function ounceToMilliliter(myNumberInOunce) {
+    const myNumberInMillitmeter = Math.round(myNumberInOunce * 29.57)
+    document.getElementById("mlOutput").innerHTML = myNumberInMillitmeter
+    return myNumberInMillitmeter
+}

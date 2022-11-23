@@ -4,69 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Client/style.css" />
     <title>Our website scrubs</title>
   </head>
   <body>
-    <script src="index.js"></script>
+    <script type="module" src="index.js" defer></script>
+    <script src="Client/testconverter.js" defer></script>
+    <script src="Database/Api.js" defer></script>
+    <script src="Client/Recipes.js" defer></script>
+
+    <div class="row">
+      <div class="column">
+        <h1>Converter</h1>
+
+        <h2>Weight</h2>
+        <div>
+          <p>from kilogram to pounds</p>
+          <input
+            type="number"
+            id="kgsInput"
+            oninput="kgsToLbs(this.value)"
+            placeholder="Enter Kilograms..."
+          />
+          <h4>Pounds:</h4>
+          <div id="lbsOutput"></div>
+        </div>
+
+        <br />
+
+        <h2>Measurement</h2>
+        <div>
+          <p>from feet to cm</p>
+          <input
+            type="number"
+            id="feetInput"
+            oninput="feetToCms(this.value)"
+            placeholder="Enter Feet..."
+          />
+          <h4>Centimeters:</h4>
+          <div id="cmsOutput"></div>
+        </div>
+      </div>
+      <br />
+      <div class="column">
+        <h2>Temperature</h2>
+        <div>
+          <p>from celcius to fahrenheit</p>
+          <input
+            type="number"
+            id="celciusInput"
+            oninput="celsiusToFahrenheit(this.value)"
+            placeholder="Enter Celcius..."
+          />
+          <h4>Fahrenheit:</h4>
+          <div id="fhtOutput"></div>
+        </div>
+
+        <br />
+
+        <div>
+          <p>from fahrenheit to celicus</p>
+          <input
+            type="number"
+            id="fahrenheitInput"
+            oninput="fahrenheitToCelsius(this.value)"
+            placeholder="Enter Fahrenheit..."
+          />
+          <h4>Celsius:</h4>
+          <div id="celsOutput"></div>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2>Recipes</h2>
+        <div id="recipe1"></div>
+        <div id="recipe2"></div>
+      </div>
+    </div>
+
+    <br />
+
     <div>
-      <h1>Converter</h1>
+      <p>from milliliter to ounces</p>
+      <input
+        type="number"
+        id="milliliterInput"
+        oninput="milliliterToOunce(this.value)"
+        placeholder="Enter milliliter..."
+      />
+      <h4>Ounces:</h4>
+      <div id="ozOutput"></div>
+    </div>
 
-      <h2>Weight</h2>
-      <div>
-        <p>from kilogram to pounds</p>
-        <input
-          type="number"
-          id="kgsInput"
-          oninput="kgsToLbs(this.value)"
-          placeholder="Enter Kilograms..."
-        />
-        <h4>Pounds:</h4>
-        <div id="lbsOutput"></div>
-      </div>
-
-      <br />
-
-      <h2>Measurement</h2>
-      <div>
-        <p>from feet to cm</p>
-        <input
-          type="number"
-          id="feetInput"
-          oninput="feetToCms(this.value)"
-          placeholder="Enter Feet..."
-        />
-        <h4>Centimeters:</h4>
-        <div id="cmsOutput"></div>
-      </div>
-
-      <br />
-
-      <h2>Temperature</h2>
-      <div>
-        <p>from celcius to fahrenheit</p>
-        <input
-          type="number"
-          id="celciusInput"
-          oninput="celsiusToFahrenheit(this.value)"
-          placeholder="Enter Celcius..."
-        />
-        <h4>Fahrenheit:</h4>
-        <div id="fhtOutput"></div>
-      </div>
-
-      <br />
-
-      <div>
-        <p>from fahrenheit to celicus</p>
-        <input
-          type="number"
-          id="fahrenheitInput"
-          oninput="fahrenheitToCelsius(this.value)"
-          placeholder="Enter Fahrenheit..."
-        />
-        <h4>Celsius:</h4>
-        <div id="celsOutput"></div>
-      </div>
+    <br />
+    <div>
+      <p>from ounces to milliliter</p>
+      <input
+        type="number"
+        id="ounceInput"
+        oninput="ounceToMilliliter(this.value)"
+        placeholder="Enter ounces..."
+      />
+      <h4>Milliliter:</h4>
+      <div id="mlOutput"></div>
     </div>
 
     <br />
@@ -75,7 +115,5 @@
       <h2>API</h2>
       <div id="catFactAPI"></div>
     </div>
-    <script src="testconverter.js"></script>
-    <script src="Api.js"></script>
   </body>
 </html>
