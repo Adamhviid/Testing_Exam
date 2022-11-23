@@ -1,5 +1,15 @@
 {
+  "type": "module",
   "dependencies": {
-    "node-fetch": "^3.3.0"
+    "axios": "^1.2.0",
+    "config": "^3.3.8",
+    "mongodb": "^4.12.0",
+    "mongoose": "^6.7.3",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
   }
 }
