@@ -20,4 +20,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-
 
-default.json/
+/config/default.json
