@@ -14,3 +14,14 @@ document.getElementById("fahrenheitInput").addEventListener("input", e => {
     let dgs = e.target.value;
     document.getElementById("dgsOutput").innerHTML = (dgs * 1.8) + 32;
 })
+
+
+
+
+
+function fahrToCel(myNumberInDegrees){
+    document.getElementById("fahrenheitInput").addEventListener("input", e => {
+        myNumberInDegrees = e.target.value;
+        document.getElementById("dgsOutput").innerHTML = (myNumberInDegrees * 1.8) + 32;
+    })
+}
