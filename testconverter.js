@@ -1,27 +1,38 @@
-document.getElementById("kgsInput").addEventListener("input", e => {
-    let kgs = e.target.value;
-    document.getElementById("lbsOutput").innerHTML = kgs * 2.205;
-})
-document.getElementById("feetInput").addEventListener("input", e => {
-    let kgs = e.target.value;
-    document.getElementById("cmsOutput").innerHTML = kgs * 2.205;
-})
-document.getElementById("degreesInput").addEventListener("input", e => {
-    let fht = e.target.value;
-    document.getElementById("fhtOutput").innerHTML = (fht - 32) * 0.5556;
-})
-document.getElementById("fahrenheitInput").addEventListener("input", e => {
-    let dgs = e.target.value;
-    document.getElementById("dgsOutput").innerHTML = (dgs * 1.8) + 32;
-})
-
-
-
-
-
-function fahrToCel(myNumberInDegrees){
-    document.getElementById("fahrenheitInput").addEventListener("input", e => {
-        myNumberInDegrees = e.target.value;
-        document.getElementById("dgsOutput").innerHTML = (myNumberInDegrees * 1.8) + 32;
-    })
+function kgsToLbs(myNumberInKgs) {
+    const myNumberInLbs = Math.round(myNumberInKgs * 2.205)
+    document.getElementById("lbsOutput").innerHTML = myNumberInLbs
+    return myNumberInLbs
 }
+
+function lbsToKgs(myNumberInLbs) {
+    const myNumberInKgs = Math.round(myNumberInLbs / 2.205)
+    document.getElementById("kgsOutput").innerHTML = myNumberInKgs
+    return myNumberInKgs
+}
+
+function feetToCms(myNumberInFeet) {
+    const myNumberInCms = Math.round(myNumberInFeet * 30.48)
+    document.getElementById("cmsOutput").innerHTML = myNumberInCms
+    return myNumberInCms
+}
+
+function cmsToFeet(myNumberInCms) {
+    const myNumberInFeet = Math.round(myNumberInCms / 30.48)
+    document.getElementById("feetOutput").innerHTML = myNumberInFeet
+    return myNumberInFeet
+}
+
+function fahrenheitToCelsius(myNumberInFahrenheit) {
+    const myNumberInCelcius = Math.round((myNumberInFahrenheit - 32) * 0.5556)
+    document.getElementById("celsOutput").innerHTML = myNumberInCelcius
+    return myNumberInCelcius
+}
+
+function celsiusToFahrenheit(myNumberInCelcius) {
+    const myNumberInFahrenheit = Math.round((myNumberInCelcius * 1.8) + 32)
+    document.getElementById("fhtOutput").innerHTML = myNumberInFahrenheit
+    return myNumberInFahrenheit
+}
+
+
+

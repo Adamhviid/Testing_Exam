@@ -1,4 +1,4 @@
-const https = require('https')
+/* const https = require('https')
 const url = "https://jsonmock.hackerrank.com/api/movies";
 https.get(url, res => {
   let data = '';
@@ -11,4 +11,4 @@ https.get(url, res => {
   })
 }).on('error', err => {
   console.log(err.message);
-})
+}) */
