@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  run_test:
     docker:
       - image: circleci/node:16.14.0
     steps:
@@ -10,7 +10,6 @@ jobs:
       - run: npm test
       - run: npm run build
 workflows:
-  version: 1
-  build:
+  build_test:
     jobs:
-      - build
+      - run_test
