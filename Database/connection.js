@@ -15,5 +15,4 @@ export default async function () {
       console.error(error);
       process.exit(1);
     });
-  mongoose.set("debug", true);
 }

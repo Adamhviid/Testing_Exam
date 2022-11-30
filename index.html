@@ -23,6 +23,7 @@
           <input
             type="number"
             id="kgsInput"
+            min="0"
             oninput="kgsToLbs(this.value)"
             placeholder="Enter Kilograms..."
           />
@@ -38,6 +39,7 @@
           <input
             type="number"
             id="feetInput"
+            min="0"
             oninput="feetToCms(this.value)"
             placeholder="Enter Feet..."
           />
@@ -77,8 +79,13 @@
 
       <div class="column">
         <h2>Recipes</h2>
-        <div id="recipe1"></div>
-        <div id="recipe2"></div>
+        <div>
+          <table id="recipe1Table"></table>
+        </div>
+        <br />
+        <div>
+          <table id="recipe2Table"></table>
+        </div>
       </div>
     </div>
 
@@ -89,6 +96,7 @@
       <input
         type="number"
         id="milliliterInput"
+        min="0"
         oninput="milliliterToOunce(this.value)"
         placeholder="Enter milliliter..."
       />
@@ -102,6 +110,7 @@
       <input
         type="number"
         id="ounceInput"
+        min="0"
         oninput="ounceToMilliliter(this.value)"
         placeholder="Enter ounces..."
       />
