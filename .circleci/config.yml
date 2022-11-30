@@ -5,23 +5,24 @@ orbs:
 jobs:
   run_test:
     executor: node/default
-      steps:
-        - checkout
-        - node/install-packages:
-            pkg-manager: npm install
-        - run:
-            command: npm start
-            name: Start server
-        - run:
-            command: npm test
-            name: Run tests
-        - run:
-            command: npm run build
-            name: Build app
-        - persist_to_workspace:
-            root: ~/project
-            paths:
-              - .
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm install
+      - run:
+          command: npm start
+          name: Start server
+      - run:
+          command: npm test
+          name: Run tests
+      - run:
+          command: npm run build
+          name: Build app
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - .
+            
 workflows:
   build_test:
     jobs:
