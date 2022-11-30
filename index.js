@@ -21,8 +21,12 @@ app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
 
-app.get("/recipes", async (req, res, next) => {
-  const Pancakes = await Recipe.findOne({ Name: "Pancakes" });
+app.get("/recipes/lasagne", async (req, res, next) => {
   const Lasagne = await Recipe.findOne({ Name: "Lasagne" });
-  res.json([Pancakes, Lasagne]);
+  res.json(Lasagne);
+});
+
+app.get("/recipes/pancakes", async (req, res, next) => {
+  const Pancakes = await Recipe.findOne({ Name: "Pancakes" });
+  res.json(Pancakes);
 });
