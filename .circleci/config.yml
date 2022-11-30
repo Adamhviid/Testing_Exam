@@ -10,9 +10,6 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
-          command: npm start
-          name: Start server
-      - run:
           command: npm test
           name: Run tests
       - run:
