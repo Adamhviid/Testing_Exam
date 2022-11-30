@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@5.0.2
+  node: circleci/node@5.0.3
 
 jobs:
   run_test:
@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: npm install
+          pkg-manager: npm
       - run:
           command: npm start
           name: Start server
