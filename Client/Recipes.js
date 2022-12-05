@@ -7,7 +7,7 @@ async function getLasagne() {
     table.insertRow().innerHTML = "Beef: " + data.BeefGram + "g"
     table.insertRow().innerHTML = "Dish Length: " + data.DishCentimeter + "cm"
     table.insertRow().innerHTML = "Sheets: " + data.SheetsGram + "g"
-    table.insertRow().innerHTML = "Temperature: " + data.TemperatureCelcius + "°C"
+    table.insertRow().innerHTML = "Temperature: " + data.Temperaturecelsius  + "°C"
     table.insertRow().innerHTML = "Tomato: " + data.TomatosauceGram + "g"
   });
 }
@@ -22,7 +22,7 @@ async function getPancakes() {
     table.insertRow().innerHTML = "Milk: " + data.MilkMilliliter + "ml"
     table.insertRow().innerHTML = "Sugar" + data.SugarGram + "g"
     table.insertRow().innerHTML = "Length: " + data.PancakelengthCentimeter + "cm"
-    table.insertRow().innerHTML = "Temperature: " + data.TemperatureCelcius + "°C"
+    table.insertRow().innerHTML = "Temperature: " + data.Temperaturecelsius  + "°C"
   });
 }
 

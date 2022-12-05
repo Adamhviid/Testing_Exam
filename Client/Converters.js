@@ -44,18 +44,18 @@ function fahrenheitToCelsius(fahrenheit) {
         document.getElementById("celsOutput").innerHTML = "value must be greater than -459.67"
         return "invalid";
     }
-    const celcius = Math.round((fahrenheit - 32) * 0.5556)
-    document.getElementById("celsOutput").innerHTML = celcius
-    return celcius
+    const celsius  = Math.round((fahrenheit - 32) * 0.5556)
+    document.getElementById("celsOutput").innerHTML = celsius 
+    return celsius 
 }
 
-function celsiusToFahrenheit(celcius) {
+function celsiusToFahrenheit(celsius ) {
     //absolute zero in celsius
-    if (celcius < -273.15) {
+    if (celsius  < -273.15) {
         document.getElementById("fhtOutput").innerHTML = "value must be greater than -273.15"
         return "invalid";
     }
-    const fahrenheit = Math.round((celcius * 1.8) + 32)
+    const fahrenheit = Math.round((celsius  * 1.8) + 32)
     document.getElementById("fhtOutput").innerHTML = fahrenheit
     return fahrenheit
 }
