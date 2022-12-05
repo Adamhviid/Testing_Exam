@@ -39,12 +39,22 @@ function cmsToFeet(myNumberInCms) {
 }
 
 function fahrenheitToCelsius(myNumberInFahrenheit) {
+    //absolute zero in fahrenheit
+    if (myNumberInFahrenheit < -459.67) {
+        document.getElementById("celsOutput").innerHTML = "value must be greater than -459.67"
+        return "invalid";
+    }
     const myNumberInCelcius = Math.round((myNumberInFahrenheit - 32) * 0.5556)
     document.getElementById("celsOutput").innerHTML = myNumberInCelcius
     return myNumberInCelcius
 }
 
 function celsiusToFahrenheit(myNumberInCelcius) {
+    //absolute zero in celsius
+    if (myNumberInCelcius < -273.15) {
+        document.getElementById("fhtOutput").innerHTML = "value must be greater than -273.15"
+        return "invalid";
+    }
     const myNumberInFahrenheit = Math.round((myNumberInCelcius * 1.8) + 32)
     document.getElementById("fhtOutput").innerHTML = myNumberInFahrenheit
     return myNumberInFahrenheit

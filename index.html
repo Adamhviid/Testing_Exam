@@ -27,28 +27,25 @@
             oninput="kgsToLbs(this.value)"
             placeholder="Enter Kilograms..."
           />
-          <h4>Pounds:</h4>
-          <div id="lbsOutput"></div>
+          <h4><span id="lbsOutput"></span> lbs</h4>
         </div>
 
         <br />
 
-        <h2>Measurement</h2>
         <div>
-          <p>from feet to cm</p>
+          <p>from pounds to kilogram</p>
           <input
             type="number"
-            id="feetInput"
+            id="lbsInput"
             min="0"
-            oninput="feetToCms(this.value)"
-            placeholder="Enter Feet..."
+            oninput="lbsToKgs(this.value)"
+            placeholder="Enter Pounds..."
           />
-          <h4>Centimeters:</h4>
-          <div id="cmsOutput"></div>
+          <h4><span id="kgsOutput"></span> kg</h4>
         </div>
-      </div>
-      <br />
-      <div class="column">
+
+        <br />
+
         <h2>Temperature</h2>
         <div>
           <p>from celcius to fahrenheit</p>
@@ -58,8 +55,7 @@
             oninput="celsiusToFahrenheit(this.value)"
             placeholder="Enter Celcius..."
           />
-          <h4>Fahrenheit:</h4>
-          <div id="fhtOutput"></div>
+          <h4><span id="fhtOutput"></span> °F</h4>
         </div>
 
         <br />
@@ -72,53 +68,75 @@
             oninput="fahrenheitToCelsius(this.value)"
             placeholder="Enter Fahrenheit..."
           />
-          <h4>Celsius:</h4>
-          <div id="celsOutput"></div>
+          <h4><span id="celsOutput"></span> °C</h4>
         </div>
       </div>
+      
+        <div class="column">
+          <h2>Measurement</h2>
+          <div>
+            <p>from feet to cm</p>
+            <input
+              type="number"
+              id="feetInput"
+              min="0"
+              oninput="feetToCms(this.value)"
+              placeholder="Enter Feet..."
+            />
+            <h4><span id="cmsOutput"></span> cm</h4>
+            <div></div>
+          </div>
 
-      <div class="column">
-        <h2>Recipes</h2>
-        <div>
-          <table id="recipe1Table"></table>
+          <div>
+            <p>from cm to feet</p>
+            <input
+              type="number"
+              id="cmsInput"
+              min="0"
+              oninput="cmsToFeet(this.value)"
+              placeholder="Enter Centimeters..."
+            />
+            <h4><span id="feetOutput"></span> ft</h4>
+          </div>
+
+          <br />
+
+          <div>
+            <p>from milliliter to ounces</p>
+            <input
+              type="number"
+              id="milliliterInput"
+              min="0"
+              oninput="milliliterToOunce(this.value)"
+              placeholder="Enter milliliter..."
+            />
+            <h4><span id="ozOutput"></span> oz</h4>
+          </div>
+
+          <br />
+          <div>
+            <p>from ounces to milliliter</p>
+            <input
+              type="number"
+              id="ounceInput"
+              min="0"
+              oninput="ounceToMilliliter(this.value)"
+              placeholder="Enter ounces..."
+            />
+            <h4><span id="mlOutput"></span> ml</h4>
+          </div>
         </div>
-        <br />
-        <div>
+
+        <div class="column">
+          <h2>Recipes</h2>
+          <table id="recipe1Table"></table>
+
+          <br />
+
           <table id="recipe2Table"></table>
         </div>
       </div>
     </div>
-
-    <br />
-
-    <div>
-      <p>from milliliter to ounces</p>
-      <input
-        type="number"
-        id="milliliterInput"
-        min="0"
-        oninput="milliliterToOunce(this.value)"
-        placeholder="Enter milliliter..."
-      />
-      <h4>Ounces:</h4>
-      <div id="ozOutput"></div>
-    </div>
-
-    <br />
-    <div>
-      <p>from ounces to milliliter</p>
-      <input
-        type="number"
-        id="ounceInput"
-        min="0"
-        oninput="ounceToMilliliter(this.value)"
-        placeholder="Enter ounces..."
-      />
-      <h4>Milliliter:</h4>
-      <div id="mlOutput"></div>
-    </div>
-
-    <br />
 
     <div>
       <h2>API</h2>
