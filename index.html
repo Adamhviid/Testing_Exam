@@ -5,143 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="Client/style.css" />
-    <title>Our website scrubs</title>
+    <title>Home of Heartfood</title>
   </head>
-  <body>
-    
+  <body class="background">
     <script type="module" src="index.js" defer ></script>
     <script src="Database/Api.js" defer></script>
     <script src="Client/Recipes.js" defer></script>
     <script src="Client/Converters.js"></script>
-
+    <h1 class="heading">🍰 Grannys Bakery Mekka 🍰</h1>
+    <div class="topRight">❤️🍻</div>
+    <h5 class="heading">Live Love Laugh</h5>
     <div class="row">
       <div class="column">
-        <h2>Weight</h2>
+        <h2>🏋️ Weight 🏋️</h2>
         <div>
-          <p>from kilogram to pounds</p>
+          <p>From kilogram to pounds</p>
           <input
             type="number"
             id="kgsInput"
             min="0"
             oninput="kgsToLbs(this.value)"
             placeholder="Enter Kilograms..."
+            class="input"
           />
-          <h4><span id="lbsOutput"></span> lbs</h4>
+          <h4><span id="lbsOutput"></span> LBS</h4>
         </div>
-
         <br />
-
         <div>
-          <p>from pounds to kilogram</p>
+          <p>From pounds to kilogram</p>
           <input
             type="number"
             id="lbsInput"
             min="0"
             oninput="lbsToKgs(this.value)"
             placeholder="Enter Pounds..."
+            class="input"
           />
-          <h4><span id="kgsOutput"></span> kg</h4>
+          <h4><span id="kgsOutput"></span> KG</h4>
         </div>
-
         <br />
-
-        <h2>Temperature</h2>
+        <h2>🌡️ Temperature 🌡️</h2>
         <div>
-          <p>from celsius  to fahrenheit</p>
+          <p>From celsius  to fahrenheit</p>
           <input
             type="number"
             id="celsius Input"
             oninput="celsiusToFahrenheit(this.value)"
             placeholder="Enter celsius ..."
+            class="input"
           />
           <h4><span id="fhtOutput"></span> °F</h4>
         </div>
-
         <br />
-
         <div>
-          <p>from fahrenheit to celicus</p>
+          <p>From fahrenheit to celicus</p>
           <input
             type="number"
             id="fahrenheitInput"
             oninput="fahrenheitToCelsius(this.value)"
             placeholder="Enter Fahrenheit..."
+            class="input"
           />
           <h4><span id="celsOutput"></span> °C</h4>
         </div>
       </div>
-      
         <div class="column">
-          <h2>Measurement</h2>
+          <h2>📐 Length 📏</h2>
           <div>
-            <p>from feet to cm</p>
+            <p>From feet to cm</p>
             <input
               type="number"
               id="feetInput"
               min="0"
               oninput="feetToCms(this.value)"
               placeholder="Enter Feet..."
+              class="input"
             />
-            <h4><span id="cmsOutput"></span> cm</h4>
+            <h4><span id="cmsOutput"></span> CM</h4>
             <div></div>
           </div>
-
           <br />
-
           <div>
-            <p>from cm to feet</p>
+            <p>From cm to feet</p>
             <input
               type="number"
               id="cmsInput"
               min="0"
               oninput="cmsToFeet(this.value)"
               placeholder="Enter Centimeters..."
+              class="input"
             />
-            <h4><span id="feetOutput"></span> ft</h4>
+            <h4><span id="feetOutput"></span> FT</h4>
           </div>
-
           <br />
-
           <div>
-            <p>from milliliter to ounces</p>
+            <h2>🍼 Liquids 💦</h2>
+            <p>From milliliter to ounces</p>
             <input
               type="number"
               id="milliliterInput"
               min="0"
               oninput="milliliterToOunce(this.value)"
               placeholder="Enter milliliter..."
+              class="input"
             />
-            <h4><span id="ozOutput"></span> oz</h4>
+            <h4><span id="ozOutput"></span> OZ</h4>
           </div>
-
           <br />
           <div>
-            <p>from ounces to milliliter</p>
+            <p>From ounces to milliliter</p>
             <input
               type="number"
               id="ounceInput"
               min="0"
               oninput="ounceToMilliliter(this.value)"
               placeholder="Enter ounces..."
+              class="input"
             />
-            <h4><span id="mlOutput"></span> ml</h4>
+            <h4><span id="mlOutput"></span> ML</h4>
           </div>
         </div>
-
         <div class="column">
-          <h2>Recipes</h2>
-          <table id="recipe1Table"></table>
-
+          <h2>🥨 Recipes 🥞</h2>
+          <table class="textRecipe" id="recipe1Table"></table>
           <br />
-
-          <table id="recipe2Table"></table>
+          <table class="textRecipe" id="recipe2Table"></table>
         </div>
       </div>
     </div>
-
-    <div>
-      <h2>API</h2>
-      <div id="catFactAPI"></div>
+    <div class="heading">
+      <h2 class="Catattack">🐱 Catattack 🐈</h2>
+      <div class="Catattack" id="catFactAPI"></div>
+    </div>
+    <div class="footerRight">
+      <h3>Made with ❤️ by Adam, Kennet and Rasmus</h3>
+    </div>
+    <div class="footerLeft">
+      <h3>est 2022 ©️</h3>
     </div>
   </body>
 </html>
