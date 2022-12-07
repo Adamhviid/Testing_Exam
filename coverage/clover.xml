@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1670420895878" clover="3.2.0">
+  <project timestamp="1670420895878" name="All files">
+    <metrics statements="48" coveredstatements="24" conditionals="32" coveredconditionals="12" methods="8" coveredmethods="6" elements="88" coveredelements="42" complexity="0" loc="48" ncloc="48" packages="1" files="1" classes="1"/>
+    <file name="ConvertersTest.js" path="C:\Users\hviid\Desktop\Testing_Exam\Client\ConvertersTest.js">
+      <metrics statements="48" coveredstatements="24" conditionals="32" coveredconditionals="12" methods="8" coveredmethods="6"/>
+      <line num="2" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="12" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="22" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="32" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="43" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="48" count="0" type="stmt"/>
+      <line num="49" count="0" type="stmt"/>
+      <line num="54" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="60" count="0" type="stmt"/>
+      <line num="64" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="65" count="0" type="stmt"/>
+      <line num="66" count="0" type="stmt"/>
+      <line num="67" count="0" type="stmt"/>
+      <line num="69" count="0" type="stmt"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="74" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="76" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="80" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
