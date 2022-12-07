@@ -1,4 +1,4 @@
-import Converters from '../Client/Converters.js';
+import Converters from '../Client/ConvertersTest.js';
 
 test('celsiusToFahrenheit', () => {
   document.body.innerHTML =
