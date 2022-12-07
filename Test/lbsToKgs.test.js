@@ -9,4 +9,8 @@ test('lbsToKgs', () => {
     expect(Converters.lbsToKgs(2)).toBe(1);
   });
 
-  // run singluar test npm test -t lbsToKgs.test.js
+test('lbsToKgs', () => {
+  expect(Converters.lbsToKgs(-1)).toBe("invalid");
+});
+
+  // run singular test npm test -t lbsToKgs.test.jsnpm
