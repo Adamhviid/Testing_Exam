@@ -5,3 +5,6 @@ it("Ensuring dataretrival from CatFactAPI", async () => {
   const fact = await getFirstFact();
   expect(fact).not.toBe(null);
 });
+
+
+// run singluar test npm test -t api.test.js
