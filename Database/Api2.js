@@ -1,8 +1,8 @@
-const axios = require("axios");
+import axios from "axios";
 
 async function getFirstFact() {
-  const response = await axios.get("https://catfact.ninja/fact");
+  const response = await axios("https://catfact.ninja/fact");
   return response.data;
 }
 
-module.exports = getFirstFact;
+export default getFirstFact;
