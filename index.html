@@ -8,13 +8,13 @@
     <title>Home of Heartfood</title>
   </head>
   <body class="background">
-    <script type="module" src="index.js" defer ></script>
-    <script src="Database/Api.js" defer></script>
-    <script src="Database/Api2.js" defer></script>
+    <script src="index.js" type="module"></script>
+    <script src="Database/Api.js" type="module"></script>
+    <script src="Database/Api2.js" type="module"></script>
     <script src="Client/Recipes.js" defer></script>
     <script src="Client/Converters.js"></script>
-    <h1 class="heading" input type=button onClick="location.href='index.html'">🍰 Grannys Bakery Mekka 🍰</h1>
-    <div class="topRight" input type=button onClick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">❤️🍻</div>
+    <h1 class="heading" id="title" input type=button onClick="location.href='index.html'">🍰 Grannys Bakery Mekka 🍰</h1>
+    <div class="topRight" id="rickroll" input type=button onClick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">❤️🍻</div>
     <h5 class="heading">Live Love Laugh</h5>
     <div class="row">
       <div class="column">
@@ -50,7 +50,7 @@
           <p>From celsius  to fahrenheit</p>
           <input
             type="number"
-            id="celsius Input"
+            id="celsiusInput"
             oninput="celsiusToFahrenheit(this.value)"
             placeholder="Enter Celsius ..."
             class="input"
