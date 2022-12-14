@@ -1,7 +1,6 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.3
-  cypress: cypress-io/cypress@2
 
 jobs:
   run_test:
@@ -20,17 +19,6 @@ jobs:
           root: ~/project
           paths:
             - .
-
-  - cypress/run:
-      name: Run Cypress tests
-      requires:
-        - run_test
-      record: true
-      parallel: true
-      parallelism: 2
-      start: npm start
-      wait-on: 'http://localhost:5500'
-      spec: cypress/e2e/*.spec.js
 
 workflows:
   build_test:
