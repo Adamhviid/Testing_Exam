@@ -20,6 +20,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "jest --env=jsdom --collectCoverage",
+    "cypress": "npx cypress run",
     "build": "echo 'hello build'",
     "eslint-output": "eslint-output"
   },
