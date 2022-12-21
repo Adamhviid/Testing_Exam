@@ -10,7 +10,7 @@ test('fahrenheit minimum', () => {
 });
 
 test('fahrenheit upper', () => {
-  expect(Converters.fahrenheitToCelsius(9941)).toBe(0);
+  expect(Converters.fahrenheitToCelsius(9941)).toBe(5505);
 });
 
 test('fahrenheit infinity', () => {
